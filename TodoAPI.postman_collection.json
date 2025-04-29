@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "9e53a1f5-cab9-47f7-8545-5d4f8793384f",
+		"name": "TodoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27398778"
+	},
+	"item": [
+		{
+			"name": "Get todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/todos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/todos/37f3e531-ab92-4e25-822d-61ceaac3832f",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"37f3e531-ab92-4e25-822d-61ceaac3832f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Learn Postman\",\r\n    \"description\": \"Test the TodoAPI using Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/todos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Learn Swagger\",\r\n  \"description\": \"Updated Learn Postman into Swagger\",\r\n  \"isCompleted\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/todos/37f3e531-ab92-4e25-822d-61ceaac3832f",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"37f3e531-ab92-4e25-822d-61ceaac3832f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/todos/94767e05-bb53-42f0-9fae-d57e5dcfdab7",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"94767e05-bb53-42f0-9fae-d57e5dcfdab7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
